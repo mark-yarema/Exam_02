@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<title>Exam</title>
+</head>
+<body class="ba-body">
+	<!-- Good luck, have fun -->
+    <!-- Початок HTML -->
+<header class="ba-header">
+	<nav class="menu-header">
+		<img src="img/Bouncy.png">
+		<ul class="menu_h">
+			<li style="margin-right: 15px"><a href="#">Hello</a></li>
+			<li style="margin-right: 15px"><a href="#">Portfolio</a></li>
+			<li style="margin-right: 15px"><a href="#">Team</a></li>
+			<li style="margin-right: 15px"><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="text-header">
+		<h1>We are code cafe</h1>
+		<p class="main-text">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</br> 
+			praesentium voluptatum</br>
+		</p>
+	</div>
+</header>
+
+<main class="ba-main">
+	<div class="portfolio">
+		<p class="title-text_portfolio">THE PORTFOLIO</p>
+		<p class="main-text_portfolio">
+			At vero eos et accusamus et iusto odio dignissimos ducimus qui</br>
+			 blanditiis praesentium</br>
+		</p>
+		<div class="menu-portfolio">
+			<ul class="menu_p">
+				<li><a href="#" style="color:#464646;">All Works</a></li>
+				<li><a href="#" style="color:#464646;">Print</a></li>
+				<li><a href="#" style="color:#464646;">Branding</a></li>
+				<li><a href="#" style="color:#464646;">Web</a></li>
+				<li><a href="#" style="color:#464646;">HTML</a></li>
+			</ul>
+		</div>
+		<div class="img">
+			<div class="img-item"><img src="img/Layer 86.png" style="width: 270px;
+height: 361px;"></div>
+			<div class="img-item"><img src="img/Layer 87.png" style="width: 270px;
+height: 229px;"></div>
+			<div class="img-item"><img src="img/Layer 91.png" style="width: 270px;
+height: 301px;"></div>
+			<div class="img-item"><img src="img/Layer 88.png" style="width: 270px;
+height: 361px;"></div>
+			<div class="img-item"><img src="img/Layer 90.png" style="width: 270px;
+height: 361px;"></div>
+			<div class="img-item"><img src="img/Layer 95.png" style="width: 270px;
+height: 344px;"></div>
+			<div class="img-item"><img src="img/Layer 89.png" style="width: 270px;
+height: 374px;"></div>
+			<div class="img-item"><img src="img/Layer 93.png" style="width: 270px;
+height: 269px;"></div>
+			<div class="img-item"><img src="img/Layer 92.png" style="width: 270px;
+height: 209px;"></div>
+			<div class="img-item"><img src="img/Layer 96.png" style="width: 270px;
+height: 357px;"></div>
+			<div class="img-item"><img src="img/Layer 94.png" style="width: 270px;
+height: 255px;"></div>
+			<div class="img-item"><img src="img/Layer 97.png" style="width: 270px;
+height: 301px;"></div>
+		</div>
+	</div>
+	<div class="team">
+		<p class="title-text_team">the team</p>
+		<p class="main-text_team">At vero eos et accusamus et iusto odio dignissimos ducimus qui</br>
+			 blanditiis praesentium</br></p>
+		<div class="left">
+			<img src="img/Layer 103.png" style="width: 285px;
+height: 364px;">
+		</div>
+		<div class="right">
+			<p class="name">Abdullah Noman</p>
+			<p class="post">Creative Director, Code Cafe</p>
+			<p class="info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+		</div>
+	</div>
+	<div class="contact">
+		<p class="title_c">contact us</p>
+		<p class="main_c">At vero eos et accusamus et iusto odio dignissimos ducimus qui</br>
+			 blanditiis praesentium</br></p></p>
+			 <div id="map"></div>
+	</div>
+
+</main>
+
+<footer class="ba-footer">
+	<p class="title-footer" style="margin:0 auto;"><img src="img/Bouncy-black.png"></p>
+	<p class="text-footer">Copyright 2015. All rights Reserved</p>
+</footer>
+   <!-- Кінець HTML -->
+
+   <!-- Почпток js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcA-aB8--Uv4ASA-ZocRCv0Udlpti8QIo&callback=initMap"
+    async defer></script>
+
+
+<script>
+$('.img').isotope({
+  // options
+  itemSelector: '.img-item',
+  layoutMode: 'fitRows'
+});
+
+var map;
+      function initMap() {
+        var uluru = {lat: 48.680265, lng: 24.328533};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      
+</script>
+	<!-- Кінець js -->
+	<!-- Good game well played -->
+</body>
+</html>
